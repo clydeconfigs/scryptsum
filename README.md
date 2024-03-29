@@ -1,12 +1,18 @@
-how to use
+# scryptsum
+
+compute and check scrypt key-derivation function (KDF), in the command line
+
+options: L, N, p, r  
+`L` - how many bytes to generate as output, e.g. 32 bytes (256 bits)  
+`N` – iterations count (affects memory and CPU usage), e.g. 19 or 20  
+`r` – block size (affects memory and CPU usage), e.g. 8  
+`p` – parallelism factor (threads to run in parallel - affects the memory, CPU usage), usually 1
+
+# how to use
 
 ## install
 
 run `make install` (do not use as sudo)
-
-## run
-
-`echo -n "password" | scryptsum` 
 
 ## examples
 
